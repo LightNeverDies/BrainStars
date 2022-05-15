@@ -1,0 +1,31 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+      "tslint:recommended",
+      "tslint-react",
+      "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+      "ordered-imports": false,
+      "object-literal-sort-keys": false,
+      "member-ordering": false,
+      "max-line-length": {
+        "options": [120]
+      },
+      "no-var-requires": false,
+      "jsx-no-lambda": false,
+      "no-console": {
+        "severity": "warning",
+        "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+      }
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+      "exclude": [
+        "config/**/*.js",
+        "node_modules/**/*.ts",
+        "coverage/lcov-report/*.js"
+      ]
+    }
+  }

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "jsx": "react",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "lib": [
+        "dom",
+        "esnext"
+      ],
+      "resolveJsonModule": true,
+      "strict": true,
+      "sourceMap": true,
+      "target": "esnext",
+      "plugins": [{"name": "typescript-tslint-plugin"}]
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
