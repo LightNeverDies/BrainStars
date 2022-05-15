@@ -408,7 +408,9 @@ describe("Rendering Main", () => {
         })
        
         describe('Function in component' , () => {
-            let mockedFunction: any, wrapper: any
+            let mockedFunction: any
+            let wrapper: any
+            
             beforeEach(() => {
                 mockedFunction = jest.fn();
                 wrapper = mount
