@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from 'react-redux';
 import { addMovie } from "./moviesSlice";
 
-const Add = () => {
+const Add = (props?: any) => {
 
     const navigate = useNavigate()
 
@@ -91,7 +91,7 @@ const Add = () => {
                     null}
                 </div>
                 <div className={style.buttonGroup}>
-                    <input className={style.submitButton} type="submit" value="Save movie"/>
+                    <input id='back' className={style.submitButton} type="submit" value="Save movie"/>
                 </div>
                 
             </form>

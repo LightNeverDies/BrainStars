@@ -12,7 +12,7 @@ import fetch from 'jest-fetch-mock'
 import reducer, { deleteItem, getItem, clearMessage, 
     searchItem, fetchMovies, addMovie, editMovie, 
     deleteMovie, searchMovie, getMovieForEdit } from '../features/Movies/moviesSlice'
-import { BrowserRouter as Router, useNavigate } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import Main from "../features/Main/Main"
 import Header from "../components/Header/Header"

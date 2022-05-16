@@ -63,6 +63,7 @@ exports[`Rendering Main Render AddMovies Component render component 1`] = `
       </div>
       <div>
         <input
+          id="back"
           type="submit"
           value="Save movie"
         />
