@@ -89,7 +89,6 @@ const sliceMovie = createSlice({
                 Object.values(element)
                 .findIndex((val: any) => val.toString().startsWith(action.payload)) >= 0)
                 state.filterData = newFilteredData
-                state.data = current(state.data)
             } else {
                 state.filterData = current(state.data)
             }

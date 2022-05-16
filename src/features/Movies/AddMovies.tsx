@@ -25,7 +25,7 @@ const Add = () => {
                     <label>Id:</label>
                     <input className={style.inputField} type="text"
                     {...register("id", {
-                    pattern: { value: /\d+/, 
+                    pattern: { value: /^[0-9]+$/, 
                     message: "Imdb_votes field should contains only numbers!" }, required: "Title is required"
                     })}
                     />
@@ -81,7 +81,7 @@ const Add = () => {
                     <label>Imdb_votes:</label>
                     <input className={style.inputField} type="text" 
                     {...register("imdb_votes", {required: "Imdb_votes is required", 
-                    pattern: { value: /\d+/, message: "Imdb_votes field should contains only numbers!" } })} 
+                    pattern: { value: /^[0-9]+$/, message: "Imdb_votes field should contains only numbers!" } })} 
                     />
                     {errors.imdb_votes?.type === "required" ? 
                     <p className={style.error}>{errors.imdb_votes.message}</p> : 
